@@ -1323,5 +1323,10 @@
         "nid": "2336915",
         "machine_name": "commerce_order_cleanup",
         "url": "https:\/\/www.drupal.org\/project\/commerce_order_cleanup"
+    },
+    {
+        "nid": "801912",
+        "machine_name": "commerce_xml",
+        "url": "https:\/\/www.drupal.org\/project\/commerce_xml"
     }
 ]

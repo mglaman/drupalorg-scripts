@@ -27,6 +27,7 @@ $procesed_modules = [
     'd7' => [],
     'd8' => [],
     'unknown' => [],
+    'error' => [],
 ];
 
 $modules = array_map(static function (\stdClass $project) {
@@ -38,7 +39,12 @@ $modules = array_map(static function (\stdClass $project) {
 }, $modules);
 
 foreach ($modules as $module) {
-    $releases = jsonDecode(fetch('https://www.drupal.org/api-d7/node.json?field_release_project=' . $module['nid']));
+    $releases = fetch('https://www.drupal.org/api-d7/node.json?field_release_project=' . $module['nid']);
+    if (empty($releases)) {
+        $procesed_modules['error'] = $module;
+        continue;
+    }
+    $releases = jsonDecode($releases);
     if (empty($releases->list)) {
         $procesed_modules['unknown'][] = $module;
         continue;
@@ -61,6 +67,7 @@ foreach ($modules as $module) {
     file_put_contents('commerce-modules-d8.json', json_encode($procesed_modules['d8'], JSON_PRETTY_PRINT));
     file_put_contents('commerce-modules-d7.json', json_encode($procesed_modules['d7'], JSON_PRETTY_PRINT));
     file_put_contents('commerce-modules-unknown.json', json_encode($procesed_modules['unknown'], JSON_PRETTY_PRINT));
+    sleep(1);
 }
 
 file_put_contents('commerce-modules-d8.json', json_encode($procesed_modules['d8'], JSON_PRETTY_PRINT));

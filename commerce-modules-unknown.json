@@ -513,5 +513,60 @@
         "nid": "2045761",
         "machine_name": "commerce_socolissimo_simplicity",
         "url": "https:\/\/www.drupal.org\/project\/commerce_socolissimo_simplicity"
+    },
+    {
+        "nid": "1889856",
+        "machine_name": "commerce_andazsolutions",
+        "url": "https:\/\/www.drupal.org\/project\/commerce_andazsolutions"
+    },
+    {
+        "nid": "1878046",
+        "machine_name": "commerce_cartasi_xpay",
+        "url": "https:\/\/www.drupal.org\/project\/commerce_cartasi_xpay"
+    },
+    {
+        "nid": "1841772",
+        "machine_name": "commerce_ecard",
+        "url": "https:\/\/www.drupal.org\/project\/commerce_ecard"
+    },
+    {
+        "nid": "1786742",
+        "machine_name": "commerce_hosting",
+        "url": "https:\/\/www.drupal.org\/project\/commerce_hosting"
+    },
+    {
+        "nid": "1706068",
+        "machine_name": "commerce_securepay",
+        "url": "https:\/\/www.drupal.org\/project\/commerce_securepay"
+    },
+    {
+        "nid": "1606834",
+        "machine_name": "commerce_catalog",
+        "url": "https:\/\/www.drupal.org\/project\/commerce_catalog"
+    },
+    {
+        "nid": "1490384",
+        "machine_name": "commerce_virtuemart",
+        "url": "https:\/\/www.drupal.org\/project\/commerce_virtuemart"
+    },
+    {
+        "nid": "1406082",
+        "machine_name": "commerce_libertyreserve",
+        "url": "https:\/\/www.drupal.org\/project\/commerce_libertyreserve"
+    },
+    {
+        "nid": "1156864",
+        "machine_name": "commerce_netcash",
+        "url": "https:\/\/www.drupal.org\/project\/commerce_netcash"
+    },
+    {
+        "nid": "1076856",
+        "machine_name": "commerce_chinapay",
+        "url": "https:\/\/www.drupal.org\/project\/commerce_chinapay"
+    },
+    {
+        "nid": "1046008",
+        "machine_name": "commerce_sagepay_token",
+        "url": "https:\/\/www.drupal.org\/project\/commerce_sagepay_token"
     }
 ]
